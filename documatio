@@ -23,6 +23,7 @@ print_help() {
 Utility Commands:
 build                               Build the files in the \`docs\` directory into the \`out\` directory.
 dev                                 Re-compile if a Markdown file in the \`docs\` directory changes.
+clean                               Remove the \`out\` directory.
 
 Miscellaneous Commands:
 upgrade                             Upgrade this tool.
@@ -57,6 +58,11 @@ dev)
         $0 build &
         export DOCUMATIO_PID="$$!"
     done
+    ;;
+
+# Remove the out directory
+clean)
+    rm -rf out
     ;;
 
 # Upgrade this tool.
