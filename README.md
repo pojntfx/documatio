@@ -84,6 +84,7 @@ In goes Markdown, out come indexed HTML and PDF slides and documents.
 Utility Commands:
 build                               Build the files in the `docs` directory into the `out` directory.
 dev                                 Re-compile if a Markdown file in the `docs` directory changes.
+clean                               Remove the `out` directory.
 
 Miscellaneous Commands:
 upgrade                             Upgrade this tool.
